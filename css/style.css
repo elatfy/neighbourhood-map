@@ -1,0 +1,34 @@
+ html, body {
+     font-family: Arial, sans-serif;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ #map {
+     height: 100%;
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom:0;
+     top:0;
+ }
+ .container-fluid,.container-fluid > div {
+  height: 100%;
+ }
+ #search-wrap {
+    
+     top: 50px;
+ }
+ .no-padding {
+  padding-right: 0;
+  padding-left: 0;
+ }
+
+ #pointList li {
+  cursor: pointer;
+ }
+
+ #pointList li:hover  { 
+  background : #fafafa;
+ }

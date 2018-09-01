@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>		
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Map Detective - Neighborhood Map</title>
+</head>
+<body>	
+	<div class="container-fluid no-padding">
+		<div class="row no-gutters">
+			<div class="col-md-3">
+				<div id="search-wrap">
+					<h4>Maadi's Restaurants Neighborhood</h4>
+					<input type="text" name="filter" class="form-control" placeholder="Filter Restaurants" data-bind="textInput: searchString, valueUpdate: 'afterkeydown'">
+					<ul id="pointList" class="list-group" data-bind="foreach: filteredList">
+						<li class="list-group-item" data-bind=" click: bounce"">
+							<span data-bind="text:name"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/knockout-3.4.2.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwuJXnnSofLP8Qa8o6wlMOjs-9oPSQ5vE&callback=initApp&libraries=places" 
+	onerror="error()"></script>
+
+
+</body>
+</html>
